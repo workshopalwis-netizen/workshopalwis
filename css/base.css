@@ -1,0 +1,221 @@
+/**
+ * DHANANJAYA PORTFOLIO — BASE STYLES & RESET
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Archivo Black', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple);
+}
+
+/* Text Selection */
+::selection {
+  background: var(--accent-purple);
+  color: #ffffff;
+}
+
+/* Base Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--max-width-site);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 5vw, 3.5rem);
+  padding-right: clamp(1.25rem, 5vw, 3.5rem);
+}
+
+.section {
+  padding-top: clamp(4.5rem, 9vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 9vw, 8.5rem);
+  position: relative;
+  z-index: var(--z-base);
+}
+
+/* Section Header Styles */
+.section-header {
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-purple-light);
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: var(--radius-full);
+}
+
+.section-title {
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.section-header.text-center .section-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ambient Background Noise & Subtle Glow Overlays */
+.ambient-bg-effects {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-background);
+  overflow: hidden;
+}
+
+.ambient-glow-1 {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(80px);
+}
+
+.ambient-glow-2 {
+  position: absolute;
+  bottom: 20%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(90px);
+}
+
+.ambient-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+}
+
+/* Utility classes */
+.highlight-purple {
+  color: var(--accent-purple-light);
+}
+
+.highlight-blue {
+  color: var(--accent-blue);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 30%, var(--accent-purple-light) 75%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

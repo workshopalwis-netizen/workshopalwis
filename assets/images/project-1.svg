@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a12"/>
+      <stop offset="40%" stop-color="#140d2a"/>
+      <stop offset="100%" stop-color="#070c1b"/>
+    </linearGradient>
+    <radialGradient id="p1Glow" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#p1Grad)"/>
+  <circle cx="780" cy="300" r="450" fill="url(#p1Glow)"/>
+
+  <!-- Geometric Grid & Particle lines -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <!-- 3D Kinetic Typographic planes -->
+  <g transform="translate(640, 360)">
+    <!-- Rotating isometric cubes / prisms -->
+    <polygon points="0,-160 160,-80 0,0 -160,-80" fill="rgba(168, 85, 247, 0.45)" stroke="#a855f7" stroke-width="2"/>
+    <polygon points="-160,-80 0,0 0,160 -160,80" fill="rgba(56, 189, 248, 0.35)" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="0,0 160,-80 160,80 0,160" fill="rgba(139, 92, 246, 0.6)" stroke="#c084fc" stroke-width="2"/>
+
+    <circle cx="-120" cy="-40" r="4" fill="#38bdf8"/>
+    <circle cx="140" cy="90" r="6" fill="#a855f7"/>
+    <circle cx="90" cy="-120" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- High-end typographic branding overlay -->
+  <text x="80" y="580" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="54" fill="#ffffff" letter-spacing="-1">HYPERION</text>
+  <text x="80" y="620" font-family="'Archivo Black', sans-serif" font-size="16" fill="#a855f7" letter-spacing="4">KINETIC BRAND FILM • MOTION GRAPHICS</text>
+  
+  <rect x="80" y="645" width="280" height="3" fill="url(#accentLine)"/>
+</svg>

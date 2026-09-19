@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080d"/>
+      <stop offset="50%" stop-color="#120c22"/>
+      <stop offset="100%" stop-color="#060914"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neonBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="filmGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  <rect width="1920" height="1080" fill="url(#filmGrid)"/>
+  <circle cx="960" cy="540" r="600" fill="url(#centerGlow)"/>
+
+  <!-- Cinema scope letterbox lines -->
+  <line x1="120" y1="140" x2="1800" y2="140" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="10 10"/>
+  <line x1="120" y1="940" x2="1800" y2="940" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="10 10"/>
+
+  <!-- Corner framing marks -->
+  <path d="M 120 180 L 120 140 L 160 140" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <path d="M 1800 180 L 1800 140 L 1760 140" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <path d="M 120 900 L 120 940 L 160 940" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <path d="M 1800 900 L 1800 940 L 1760 940" stroke="#38bdf8" stroke-width="2" fill="none"/>
+
+  <!-- Abstract 3D Geometric Lens Rings -->
+  <g transform="translate(960, 540)">
+    <ellipse rx="360" ry="180" fill="none" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5" transform="rotate(-15)"/>
+    <ellipse rx="320" ry="150" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" transform="rotate(25)"/>
+    <ellipse rx="260" ry="120" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" transform="rotate(-40)"/>
+    
+    <!-- Central Soundwave Bars -->
+    <g transform="translate(-180, 0)">
+      <rect x="0" y="-30" width="6" height="60" rx="3" fill="#a855f7" opacity="0.8"/>
+      <rect x="18" y="-55" width="6" height="110" rx="3" fill="#8b5cf6" opacity="0.9"/>
+      <rect x="36" y="-20" width="6" height="40" rx="3" fill="#38bdf8" opacity="0.7"/>
+      <rect x="54" y="-80" width="6" height="160" rx="3" fill="#a855f7"/>
+      <rect x="72" y="-45" width="6" height="90" rx="3" fill="#38bdf8" opacity="0.85"/>
+      <rect x="90" y="-100" width="6" height="200" rx="3" fill="#ffffff"/>
+      <rect x="108" y="-70" width="6" height="140" rx="3" fill="#a855f7"/>
+      <rect x="126" y="-120" width="6" height="240" rx="3" fill="url(#neonBar)"/>
+      <rect x="144" y="-60" width="6" height="120" rx="3" fill="#38bdf8"/>
+      <rect x="162" y="-140" width="6" height="280" rx="3" fill="#ffffff"/>
+      <rect x="180" y="-85" width="6" height="170" rx="3" fill="#a855f7"/>
+      <rect x="198" y="-110" width="6" height="220" rx="3" fill="url(#neonBar)"/>
+      <rect x="216" y="-40" width="6" height="80" rx="3" fill="#38bdf8"/>
+      <rect x="234" y="-95" width="6" height="190" rx="3" fill="#a855f7"/>
+      <rect x="252" y="-50" width="6" height="100" rx="3" fill="#38bdf8" opacity="0.9"/>
+      <rect x="270" y="-75" width="6" height="150" rx="3" fill="#8b5cf6" opacity="0.8"/>
+      <rect x="288" y="-25" width="6" height="50" rx="3" fill="#38bdf8" opacity="0.7"/>
+      <rect x="306" y="-60" width="6" height="120" rx="3" fill="#a855f7" opacity="0.8"/>
+      <rect x="324" y="-35" width="6" height="70" rx="3" fill="#8b5cf6" opacity="0.7"/>
+      <rect x="342" y="-15" width="6" height="30" rx="3" fill="#38bdf8" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Technical Head-Up Display Labels -->
+  <text x="140" y="180" font-family="'Archivo Black', sans-serif" font-size="16" fill="#8b5cf6" letter-spacing="4">DHANANJAYA // SHOWREEL 2026</text>
+  <text x="140" y="210" font-family="'Archivo Black', sans-serif" font-weight="700" font-size="36" fill="#ffffff" letter-spacing="1">MOTION GRAPHICS &amp; VIDEO EDITING</text>
+  <text x="140" y="245" font-family="'Archivo Black', sans-serif" font-size="14" fill="#94a3b8" letter-spacing="2">4K UHD • 60 FPS • MASTER PRORES</text>
+
+  <text x="1780" y="180" text-anchor="end" font-family="'Archivo Black', sans-serif" font-size="15" fill="#38bdf8" letter-spacing="3">REC [●] 00:01:48:24</text>
+  <text x="1780" y="210" text-anchor="end" font-family="'Archivo Black', sans-serif" font-size="14" fill="#64748b" letter-spacing="2">AUDIO: 48kHz • 24-BIT STEREO</text>
+
+  <text x="140" y="910" font-family="'Archivo Black', sans-serif" font-size="14" fill="#64748b" letter-spacing="3">COLOR PROFILE: BLACKMAGIC FILM / REC.709</text>
+  <text x="1780" y="910" text-anchor="end" font-family="'Archivo Black', sans-serif" font-size="14" fill="#8b5cf6" letter-spacing="3">CLICK TO PLAY CINEMATIC REEL</text>
+</svg>

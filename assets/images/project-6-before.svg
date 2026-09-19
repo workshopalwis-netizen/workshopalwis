@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <rect width="1280" height="720" fill="#1e293b"/>
+  <!-- Just empty mountain ridge without portal -->
+  <path d="M 0 540 Q 300 480 640 520 T 1280 500 L 1280 720 L 0 720 Z" fill="#0f172a"/>
+  <text x="80" y="580" font-family="'Archivo Black', sans-serif" font-weight="700" font-size="44" fill="#94a3b8">RAW CAMERA DRONE PLATE</text>
+  <text x="80" y="620" font-family="'Archivo Black', sans-serif" font-size="16" fill="#64748b">CLEAN BACKGROUND • NO CGI ASSETS INTEGRATED</text>
+</svg>

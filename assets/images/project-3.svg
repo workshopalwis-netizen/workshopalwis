@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1026"/>
+    </linearGradient>
+    <radialGradient id="headlightGlow" cx="60%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyanTail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#p3Grad)"/>
+
+  <!-- Anamorphic light streaks -->
+  <line x1="0" y1="420" x2="1280" y2="420" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="422" x2="1180" y2="422" stroke="#8b5cf6" stroke-width="6" opacity="0.25"/>
+  <circle cx="750" cy="420" r="180" fill="url(#headlightGlow)"/>
+
+  <!-- Stylized Automotive Silhouette in Motion -->
+  <path d="M 450 450 L 520 400 L 680 380 L 840 395 L 980 430 L 1020 450 Z" fill="#0b0f19" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 540 400 L 670 385 L 750 400 Z" fill="rgba(56,189,248,0.2)"/>
+
+  <!-- Motion speed lines -->
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="1.5">
+    <line x1="200" y1="460" x2="420" y2="460"/>
+    <line x1="150" y1="480" x2="380" y2="480"/>
+    <line x1="300" y1="500" x2="480" y2="500"/>
+    <line x1="880" y1="460" x2="1150" y2="460"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="80" y="580" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="54" fill="#ffffff" letter-spacing="-1">THE DRIFT</text>
+  <text x="80" y="620" font-family="'Archivo Black', sans-serif" font-size="16" fill="#38bdf8" letter-spacing="4">CINEMATIC PROMOTIONAL EDIT • DAVINCI COLOR</text>
+  <rect x="80" y="645" width="280" height="3" fill="url(#cyanTail)"/>
+</svg>

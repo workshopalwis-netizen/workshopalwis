@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Dhananjaya — Motion Graphics Designer &amp; Video Editor</title>
+  <meta name="title" content="Dhananjaya — Motion Graphics Designer &amp; Video Editor">
+  <meta name="description" content="Portfolio of Dhananjaya, a Motion Graphics Designer and Video Editor specializing in motion graphics, video editing, 3D animation, visual effects and creative content.">
+  <meta name="keywords" content="Motion Graphics Designer, Video Editor, Motion Designer, 3D Animation, Visual Effects, Video Editing, Kinetic Typography, Creative Content, Social Media Video, Promotional Video, Advertising Video, Blender, DaVinci Resolve, After Effects">
+  <meta name="author" content="Dhananjaya">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07080c">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dhananjaya — Motion Graphics Designer &amp; Video Editor">
+  <meta property="og:description" content="I turn ideas into motion. Cinematic video editing, motion graphics, 3D animation and visual storytelling.">
+  <meta property="og:image" content="assets/images/showreel-cover.svg">
+
+  <!-- Google Fonts: Archivo Black -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+  <!-- Three.js from CDN (for 3D kinetic WebGL hero; falls back cleanly if offline) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Cinematic Background Effects -->
+  <div class="ambient-bg-effects" aria-hidden="true">
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- =========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Dhananjaya Home">
+        <span class="brand-glyph">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </span>
+        <span>DHANANJAYA</span>
+      </a>
+
+      <nav class="desktop-nav" id="desktop-nav" aria-label="Main Navigation">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#showreel" class="nav-link">Showreel</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Sound Ambiance Toggle -->
+        <button class="sound-toggle-btn" id="sound-toggle" aria-label="Toggle ambient sound">
+          <div class="sound-waves">
+            <span class="sound-wave-bar"></span>
+            <span class="sound-wave-bar"></span>
+            <span class="sound-wave-bar"></span>
+          </div>
+          <span class="sound-label">SOUND</span>
+        </button>
+
+        <!-- Let's Talk CTA -->
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.35rem; font-size: 0.8125rem;">
+          LET'S TALK
+        </a>
+
+        <!-- Mobile Menu Hamburger Trigger -->
+        <button class="mobile-menu-trigger" id="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <!-- Interactive Three.js WebGL Canvas -->
+    <canvas class="hero-three-canvas" id="hero-canvas"></canvas>
+
+    <div class="container hero-content">
+      <!-- Status Badge -->
+      <div class="hero-status-badge">
+        <span class="status-dot"></span>
+        <span>Available for select creative projects &amp; collaborations</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-headline">
+        <span class="line-break">I TURN IDEAS</span>
+        <span class="text-gradient">INTO MOTION.</span>
+      </h1>
+
+      <!-- Alternative Smaller Statement -->
+      <div class="hero-substatement">
+        Motion Graphics Designer • Video Editor • 3D Creative
+      </div>
+
+      <!-- Supporting Text -->
+      <p class="hero-supporting-text">
+        I create engaging visual experiences through motion design, video editing, 3D, visual effects and creative storytelling.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta-group">
+        <a href="#work" class="btn btn-primary">
+          VIEW MY WORK
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          LET'S WORK TOGETHER
+        </a>
+      </div>
+    </div>
+
+    <!-- Mouse Scroll Indicator -->
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE CREATIVE DNA MARQUEE
+       ========================================================================= -->
+  <section class="dna-ticker-section" aria-label="Creative DNA">
+    <div class="dna-track">
+      <div class="dna-word-wrap"><span class="dna-word">VIDEO</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">MOTION</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">3D</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">VFX</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">STORY</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">CREATIVITY</span><span class="dna-sep"></span></div>
+      
+      <!-- Duplicated for seamless infinite scroll -->
+      <div class="dna-word-wrap"><span class="dna-word">VIDEO</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">MOTION</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">3D</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">VFX</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">STORY</span><span class="dna-sep"></span></div>
+      <div class="dna-word-wrap"><span class="dna-word">CREATIVITY</span><span class="dna-sep"></span></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT ME SECTION
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Identity // Positioning</div>
+        <h2 class="section-title">ABOUT ME</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-positioning-block">
+          <div class="quote-symbol">“</div>
+          <p class="positioning-statement">
+            "I don't just edit videos. I bring ideas to life."
+          </p>
+          <p class="positioning-statement highlight-purple" style="font-size: 1.35rem;">
+            "I create visual experiences designed to capture attention and make people remember."
+          </p>
+          <div class="about-rhythm-callout">
+            "For me, editing is not simply cutting footage together. It's about understanding the story, controlling the rhythm, designing the visuals and creating an experience for the viewer."
+          </div>
+        </div>
+
+        <div class="about-bio-text">
+          <p>
+            I'm a creative video editor and motion graphics designer passionate about turning ideas into engaging visual experiences.
+          </p>
+          <p>
+            My work combines video editing, motion graphics, 3D animation, visual effects and creative storytelling.
+          </p>
+          <p>
+            I enjoy taking a simple idea and developing it into something visually powerful, memorable and meaningful.
+          </p>
+          <p>
+            Whether it's a short-form social media video, promotional content, an advertisement, a motion graphics piece or a 3D visual, I focus on creating work that captures attention and communicates clearly.
+          </p>
+
+          <!-- Interactive DNA Cards Grid -->
+          <div class="about-dna-list">
+            <div class="dna-card">
+              <div class="dna-card-title">VIDEO</div>
+              <div class="dna-card-desc">Pacing, cinematic rhythm, storytelling</div>
+            </div>
+            <div class="dna-card">
+              <div class="dna-card-title">MOTION</div>
+              <div class="dna-card-desc">Kinetic energy, dynamic graphic animation</div>
+            </div>
+            <div class="dna-card">
+              <div class="dna-card-title">3D</div>
+              <div class="dna-card-desc">Spatial depth, modeling, photoreal lighting</div>
+            </div>
+            <div class="dna-card">
+              <div class="dna-card-title">VFX</div>
+              <div class="dna-card-desc">Compositing, particle physics, visual treatments</div>
+            </div>
+            <div class="dna-card">
+              <div class="dna-card-title">STORY</div>
+              <div class="dna-card-desc">Emotional hooks, narrative arcs, meaning</div>
+            </div>
+            <div class="dna-card">
+              <div class="dna-card-title">CREATIVITY</div>
+              <div class="dna-card-desc">Unconventional visual solutions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MY CAPABILITIES ("WHAT I CAN CREATE")
+       ========================================================================= -->
+  <section class="section" id="capabilities" style="background: rgba(13, 15, 23, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Disciplines</div>
+        <h2 class="section-title">WHAT I CAN CREATE</h2>
+        <p class="section-subtitle">
+          From concept development to the final render, combining video editing, motion graphics, 3D and visual effects.
+        </p>
+      </div>
+
+      <!-- Rendered dynamically by js/main.js from PORTFOLIO_DATA.capabilities -->
+      <div class="capabilities-grid" id="capabilities-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CINEMATIC SHOWREEL SECTION
+       ========================================================================= -->
+  <section class="section" id="showreel">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Direct Visual Proof</div>
+        <h2 class="section-title">MY WORK SPEAKS VISUALLY.</h2>
+        <p class="section-subtitle">
+          A collection of my work across motion graphics, video editing, 3D animation, visual effects and creative content.
+        </p>
+      </div>
+
+      <!-- Showreel Theater Card Trigger -->
+      <div class="showreel-theater-card" id="showreel-trigger" role="button" aria-label="Play Motion Design &amp; Video Editing Showreel">
+        <img class="showreel-poster-img" src="assets/images/showreel-cover.svg" alt="Dhananjaya Motion Design Showreel"/>
+        <div class="showreel-gradient-overlay"></div>
+
+        <div class="showreel-center-play">
+          <div class="showreel-play-btn-large">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff">
+              <polygon points="6 4 20 12 6 20 6 4"/>
+            </svg>
+          </div>
+          <div class="showreel-play-text">PLAY SHOWREEL</div>
+        </div>
+
+        <div class="showreel-hud-bar">
+          <div>MOTION DESIGN &amp; VIDEO EDITING SHOWREEL</div>
+          <div class="highlight-blue">4K UHD • 60 FPS • MASTER PRORES</div>
+          <div>DURATION: 01:48</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PORTFOLIO GALLERY ("SELECTED WORK")
+       ========================================================================= -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Curated Showcase</div>
+        <h2 class="section-title">SELECTED WORK</h2>
+        <p class="section-subtitle">
+          Explore featured video edits, kinetic typography, 3D animations, commercial campaigns, and visual effects. Click any project for the full case study and Before/After VFX breakdown.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-bar" id="portfolio-filters" role="tablist" aria-label="Project Categories"></div>
+
+      <!-- Project Cards Lookbook Grid -->
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MY CREATIVE PROCESS ("FROM IDEA TO FINAL FRAME")
+       ========================================================================= -->
+  <section class="section" id="process" style="background: rgba(13, 15, 23, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Methodology</div>
+        <h2 class="section-title">FROM IDEA TO FINAL FRAME</h2>
+        <p class="section-subtitle">
+          A disciplined 5-step creative pipeline that ensures every visual decision is intentional, story-aligned, and executed with precision.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 01 -->
+        <div class="process-step-item">
+          <div class="step-badge">01</div>
+          <div class="step-content-card">
+            <div class="step-title-row">
+              <h3 class="step-title">DISCOVER</h3>
+              <span class="step-subtitle">// Brief &amp; Vision Analysis</span>
+            </div>
+            <p class="step-desc">
+              Understand the idea, audience and objective. Every great project starts with deep clarity. I dissect the core message, analyze the target audience, study the platform dynamics, and clarify the exact emotional response we need to trigger.
+            </p>
+            <div class="step-deliverables-list">
+              <span class="capability-pill">Project brief breakdown</span>
+              <span class="capability-pill">Creative moodboard</span>
+              <span class="capability-pill">Visual benchmarks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="process-step-item">
+          <div class="step-badge">02</div>
+          <div class="step-content-card">
+            <div class="step-title-row">
+              <h3 class="step-title">PLAN</h3>
+              <span class="step-subtitle">// Visual Architecture &amp; Pacing</span>
+            </div>
+            <p class="step-desc">
+              Develop the creative direction, visual style and story. Translating concepts into an actionable blueprint. I design styleframes, plan editorial pacing, map the narrative arc, and establish typography and color palettes before opening the editing timeline.
+            </p>
+            <div class="step-deliverables-list">
+              <span class="capability-pill">Styleframes</span>
+              <span class="capability-pill">Beat sheet &amp; Storyboards</span>
+              <span class="capability-pill">Audio selection &amp; pacing map</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="process-step-item">
+          <div class="step-badge">03</div>
+          <div class="step-content-card">
+            <div class="step-title-row">
+              <h3 class="step-title">CREATE</h3>
+              <span class="step-subtitle">// Execution &amp; Compositing</span>
+            </div>
+            <p class="step-desc">
+              Build the edit, motion graphics, animation, 3D and visual effects. Where vision becomes tangible reality. I sculpt the primary cut, animate custom 2D/3D assets, rig typography, build custom transitions, and composite visual elements frame by frame.
+            </p>
+            <div class="step-deliverables-list">
+              <span class="capability-pill">Assembly edit</span>
+              <span class="capability-pill">3D simulations &amp; renders</span>
+              <span class="capability-pill">Motion graphics passes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="process-step-item">
+          <div class="step-badge">04</div>
+          <div class="step-content-card">
+            <div class="step-title-row">
+              <h3 class="step-title">REFINE</h3>
+              <span class="step-subtitle">// Micro-Timing &amp; Color Polish</span>
+            </div>
+            <p class="step-desc">
+              Polish timing, transitions, sound, color and details. The difference between good and unforgettable lies in the details. I polish micro-timing, design immersive layered soundscapes, execute cinema-grade color grading, and balance visual rhythm.
+            </p>
+            <div class="step-deliverables-list">
+              <span class="capability-pill">Precision audio mix</span>
+              <span class="capability-pill">Color grading &amp; LUT matching</span>
+              <span class="capability-pill">Fine-tuned pacing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div class="process-step-item">
+          <div class="step-badge">05</div>
+          <div class="step-content-card">
+            <div class="step-title-row">
+              <h3 class="step-title">DELIVER</h3>
+              <span class="step-subtitle">// Master Exports &amp; Deployment</span>
+            </div>
+            <p class="step-desc">
+              Deliver a professional final product ready for its intended platform. Exporting pristine master files optimized for maximum fidelity across broadcast, YouTube, web heroes, and social channels with zero compression artifacting.
+            </p>
+            <div class="step-deliverables-list">
+              <span class="capability-pill">High-bitrate ProRes / MP4 masters</span>
+              <span class="capability-pill">Multi-aspect ratio exports (16:9, 9:16, 1:1)</span>
+              <span class="capability-pill">Archived project packages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TOOLS & SOFTWARE SECTION
+       ========================================================================= -->
+  <section class="section" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Technical Mastery</div>
+        <h2 class="section-title">TOOLS I WORK WITH</h2>
+        <p class="section-subtitle">
+          Professional creative software configured for cinema-grade color science, kinetic motion, and photorealistic 3D generation.
+        </p>
+      </div>
+
+      <!-- Rendered dynamically from PORTFOLIO_DATA.tools -->
+      <div class="tools-grid" id="tools-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       WHY WORK WITH ME SECTION
+       ========================================================================= -->
+  <section class="section" id="why" style="background: rgba(13, 15, 23, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Core Value Proposition</div>
+        <h2 class="section-title">WHY WORK WITH ME?</h2>
+        <p class="section-subtitle">
+          Four fundamental pillars that define my creative output and client partnerships.
+        </p>
+      </div>
+
+      <!-- Rendered dynamically from PORTFOLIO_DATA.whyWorkWithMe -->
+      <div class="why-grid" id="why-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ACHIEVEMENT / RESULTS SECTION
+       ========================================================================= -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="results-banner">
+        <div class="section-tag" style="margin-bottom: 1.5rem;">Performance Focus</div>
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">RESULTS THAT SPEAK</h2>
+        <blockquote class="results-quote">
+          "100% organic success proves the ability to hold viewer attention and provide genuine value."
+        </blockquote>
+
+        <div class="results-badges-grid">
+          <div class="result-badge-card">
+            <div class="result-badge-label">RETENTION FOCUSED</div>
+            <div class="result-badge-detail">Engineered for high watch-time &amp; viewer hook rate</div>
+          </div>
+          <div class="result-badge-card">
+            <div class="result-badge-label">ORIGINAL VISUAL SYSTEMS</div>
+            <div class="result-badge-detail">Zero generic cookie-cutter templates; crafted from scratch</div>
+          </div>
+          <div class="result-badge-card">
+            <div class="result-badge-label">END-TO-END WORKFLOW</div>
+            <div class="result-badge-detail">From storyboard concept to 4K color grade &amp; final render</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SERVICES SECTION
+       ========================================================================= -->
+  <section class="section" id="services" style="background: rgba(13, 15, 23, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Creative Offerings</div>
+        <h2 class="section-title">SERVICES</h2>
+        <p class="section-subtitle">
+          Comprehensive post-production and creative content solutions tailored to brands, agencies, and high-impact creators.
+        </p>
+      </div>
+
+      <!-- Rendered dynamically from PORTFOLIO_DATA.services -->
+      <div class="services-grid" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CLIENT WORK / MARKETING EXPERIENCE SECTION
+       ========================================================================= -->
+  <section class="section" id="marketing-experience">
+    <div class="container">
+      <div class="about-positioning-block" style="border-color: var(--border-accent-blue);">
+        <div class="section-tag" style="color: var(--accent-blue); background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.25);">
+          Commercial Strategy
+        </div>
+        <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: #ffffff; margin-bottom: 1rem;">
+          MARKETING &amp; ADVERTISING CONTENT EXPERIENCE
+        </h3>
+        <p style="font-size: 1.15rem; line-height: 1.75; color: var(--text-primary); margin-bottom: 1.5rem;">
+          "I also work with marketing-focused video and advertising content, creating visuals designed not only to look good but to communicate a message and capture attention."
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Extensive experience structuring high-conversion video assets: hook engineering, audience retention patterns, dynamic kinetic call-to-actions, and multi-format adaptations for paid performance campaigns.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PERSONAL CREATIVE PHILOSOPHY (KINETIC TYPOGRAPHY)
+       ========================================================================= -->
+  <section class="section philosophy-section" id="philosophy">
+    <div class="container">
+      <div class="section-tag" style="margin-bottom: 2rem;">Philosophy</div>
+      
+      <div class="philosophy-lead">
+        GOOD CONTENT<br>
+        <span class="highlight-purple">GETS ATTENTION.</span><br><br>
+        GREAT CONTENT<br>
+        <span class="highlight-blue">GETS REMEMBERED.</span>
+      </div>
+
+      <div class="philosophy-subtext-grid">
+        <div class="philosophy-subtext-item">Design is not decoration.</div>
+        <div class="philosophy-subtext-item">Video is not just editing.</div>
+        <div class="philosophy-subtext-item">Motion is not just movement.</div>
+        <div class="philosophy-subtext-item">Everything should have a purpose.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT MY STYLE
+       ========================================================================= -->
+  <section class="section" id="style" style="background: rgba(13, 15, 23, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">Visual Identity</div>
+        <h2 class="section-title">ABOUT MY STYLE</h2>
+        <p class="section-subtitle">
+          Hover or tap any style keyword to explore the visual philosophy behind my edits and motion design.
+        </p>
+      </div>
+
+      <div class="style-tags-container" id="style-tags-container"></div>
+      <div class="style-preview-box">
+        <span id="style-preview-text">Atmospheric lighting, anamorphic scope, wide aspect ratios</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT SECTION
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <div class="contact-layout">
+          <!-- Left Column -->
+          <div class="contact-left">
+            <div class="section-tag">Get In Touch</div>
+            <h2>HAVE AN IDEA?</h2>
+            <p class="contact-subtext">
+              "Let's turn it into something people remember."
+            </p>
+
+            <div style="margin-bottom: 2.5rem;">
+              <h4 style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;">
+                Verified Profiles &amp; Inquiries
+              </h4>
+              <div class="social-links-list" id="social-links-list">
+                <!-- Populated dynamically only for active URLs -->
+              </div>
+            </div>
+
+            <div class="about-rhythm-callout" style="border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+              <div style="font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">Fast Turnaround &amp; Communication</div>
+              <div style="color: var(--text-muted); font-size: 0.8125rem;">
+                Available for worldwide remote collaboration across commercial spots, social campaigns, and 3D visual development.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-right">
+            <form class="contact-form" id="contact-form">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Your Name *</label>
+                  <input class="form-input" type="text" id="contact-name" name="name" placeholder="Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address *</label>
+                  <input class="form-input" type="email" id="contact-email" name="email" placeholder="alex@brand.com" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="contact-brand">Company / Brand</label>
+                  <input class="form-input" type="text" id="contact-brand" name="brand" placeholder="Studio / Company Name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-project-type">Project Type *</label>
+                  <select class="form-select" id="contact-project-type" name="projectType" required>
+                    <option value="" disabled selected>Select a creative service</option>
+                    <option value="VIDEO EDITING">Video Editing</option>
+                    <option value="MOTION GRAPHICS">Motion Graphics</option>
+                    <option value="3D ANIMATION">3D Animation</option>
+                    <option value="VISUAL EFFECTS">Visual Effects (VFX)</option>
+                    <option value="SOCIAL MEDIA CONTENT">Social Media Content (Reels/Shorts)</option>
+                    <option value="PROMOTIONAL VIDEOS">Promotional Videos</option>
+                    <option value="ADVERTISEMENT VIDEOS">Advertisement Videos</option>
+                    <option value="KINETIC TYPOGRAPHY">Kinetic Typography</option>
+                    <option value="CREATIVE CONTENT">Creative Content</option>
+                    <option value="OTHER">Other Collaboration</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-budget">Estimated Budget Range</label>
+                <select class="form-select" id="contact-budget" name="budget">
+                  <option value="" disabled selected>Select estimated budget</option>
+                  <option value="UNDER_$1K">&lt; $1,000</option>
+                  <option value="$1K-$3K">$1,000 – $3,000</option>
+                  <option value="$3K-$5K">$3,000 – $5,000</option>
+                  <option value="$5K-$10K">$5,000 – $10,000</option>
+                  <option value="$10K+">$10,000+</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-details">Project Details *</label>
+                <textarea class="form-textarea" id="contact-details" name="details" placeholder="Describe the idea, timeline, deliverables, and vision..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-reference">Reference / Inspiration Link</label>
+                <input class="form-input" type="url" id="contact-reference" name="reference" placeholder="https://youtube.com/... or Google Drive link">
+              </div>
+
+              <div id="form-feedback-msg" class="form-feedback-msg" role="status"></div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <span>START A PROJECT</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">DHANANJAYA</div>
+          <div class="footer-creds">
+            Motion Graphics Designer • Video Editor • 3D • VFX • Creative Content
+          </div>
+          <div class="footer-motto">
+            "Turning ideas into motion."
+          </div>
+          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.8125rem; font-family: var(--font-mono);">
+            <a href="mailto:workshopalwis@gmail.com" style="color: var(--accent-purple-light);">workshopalwis@gmail.com</a>
+            <span style="color: var(--text-dark);">WhatsApp: <a href="https://wa.me/9609725219" style="color: var(--text-secondary); text-decoration: underline;">+960 972 5219</a> • <a href="https://wa.me/94705032889" style="color: var(--text-secondary); text-decoration: underline;">+94 70 503 2889</a></span>
+          </div>
+        </div>
+
+        <nav class="footer-nav-list" aria-label="Footer Navigation">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#capabilities" class="nav-link">Skills</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Dhananjaya. All rights reserved.</div>
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+          <span>BACK TO TOP</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL 1: CINEMATIC SHOWREEL PLAYER
+       ========================================================================= -->
+  <div class="modal-backdrop" id="showreel-modal" role="dialog" aria-modal="true" aria-label="Showreel Video Player">
+    <div class="showreel-player-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem 1.5rem; background:#07090e; border-bottom:1px solid var(--border-subtle);">
+        <div style="font-family:var(--font-mono); font-size:0.8125rem; color:var(--accent-purple-light); letter-spacing:0.1em;">
+          MOTION DESIGN &amp; VIDEO EDITING SHOWREEL
+        </div>
+        <button class="modal-close-btn" id="showreel-modal-close" style="position:static; width:2rem; height:2rem;" aria-label="Close Showreel">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="video-screen-frame" id="showreel-video-frame">
+        <!-- Injected dynamically by js/showreel.js -->
+      </div>
+
+      <div class="video-custom-controls">
+        <button id="showreel-toggle-play" style="font-weight:700; color:#fff;">PAUSE</button>
+        <div class="video-scrub-bar" id="showreel-scrub-bar">
+          <div class="video-scrub-progress" id="showreel-scrub-progress"></div>
+        </div>
+        <div id="showreel-time-display">00:48 / 01:48</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: PROJECT CASE STUDY DEEP-DIVE & BEFORE/AFTER SLIDER
+       ========================================================================= -->
+  <div class="modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <div class="modal-content-window">
+      <button class="modal-close-btn" id="case-study-modal-close" aria-label="Close Case Study">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div id="case-study-modal-body">
+        <!-- Injected dynamically by js/portfolio.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/three-hero.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/showreel.js"></script>
+  <script src="js/process.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

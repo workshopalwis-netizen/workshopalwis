@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608"/>
+      <stop offset="60%" stop-color="#0c0e15"/>
+      <stop offset="100%" stop-color="#141126"/>
+    </linearGradient>
+    <radialGradient id="rimLight" cx="65%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metalBevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="30%" stop-color="#475569"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#p2Dark)"/>
+  <circle cx="820" cy="320" r="350" fill="url(#rimLight)"/>
+
+  <!-- 3D Luxury Watch / Tech Device Macro -->
+  <g transform="translate(760, 360)">
+    <!-- Outer Bezel Ring -->
+    <circle cx="0" cy="0" r="220" fill="none" stroke="url(#metalBevel)" stroke-width="24"/>
+    <circle cx="0" cy="0" r="190" fill="#090d16" stroke="rgba(56, 189, 248, 0.4)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="170" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-dasharray="6 6"/>
+
+    <!-- Dial Tick marks -->
+    <g stroke="#38bdf8" stroke-width="3">
+      <line x1="0" y1="-170" x2="0" y2="-150"/>
+      <line x1="170" y1="0" x2="150" y2="0"/>
+      <line x1="0" y1="170" x2="0" y2="150"/>
+      <line x1="-170" y1="0" x2="-150" y2="0"/>
+    </g>
+
+    <!-- Subdials and mechanical gear shadows -->
+    <circle cx="-50" cy="0" r="45" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="50" cy="0" r="45" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+    <!-- Needles -->
+    <line x1="0" y1="20" x2="60" y2="-100" stroke="#f8fafc" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="20" x2="-80" y2="-40" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="20" r="8" fill="#a855f7"/>
+
+    <!-- Atmospheric Lens Glow -->
+    <ellipse cx="60" cy="-60" rx="90" ry="40" fill="rgba(255,255,255,0.12)" transform="rotate(-30 60 -60)"/>
+  </g>
+
+  <!-- High-end branding -->
+  <text x="80" y="580" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="54" fill="#ffffff" letter-spacing="-1">CHRONO 3D</text>
+  <text x="80" y="620" font-family="'Archivo Black', sans-serif" font-size="16" fill="#38bdf8" letter-spacing="4">3D PRODUCT COMMERCIAL • BLENDER CYCLES</text>
+  <rect x="80" y="645" width="280" height="3" fill="#38bdf8"/>
+</svg>

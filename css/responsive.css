@@ -1,0 +1,230 @@
+/**
+ * DHANANJAYA PORTFOLIO — RESPONSIVE DESIGN & MOBILE OPTIMIZATIONS
+ */
+
+/* ==========================================================================
+   TABLET BREAKPOINT (max-width: 1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .desktop-nav {
+    gap: 1.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+/* ==========================================================================
+   MOBILE BREAKPOINT (max-width: 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Disable custom cursor on touch devices */
+  .custom-cursor-dot,
+  .custom-cursor-follower {
+    display: none !important;
+  }
+
+  /* Navigation Drawer */
+  .desktop-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 380px;
+    height: 100vh;
+    background: rgba(10, 11, 18, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+    gap: 2rem;
+    border-left: 1px solid var(--border-accent);
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.9);
+    transition: right var(--transition-spring);
+    z-index: 200;
+  }
+
+  .desktop-nav.mobile-open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .mobile-menu-trigger {
+    display: flex;
+    z-index: 210;
+  }
+
+  .mobile-menu-trigger.is-active svg {
+    transform: rotate(90deg);
+  }
+
+  /* Hero Adjustments */
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    min-height: auto;
+  }
+
+  .hero-headline {
+    font-size: 2.75rem;
+    line-height: 1.05;
+  }
+
+  .hero-substatement {
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  /* DNA Marquee */
+  .dna-word {
+    font-size: 2rem;
+  }
+
+  .about-dna-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Showreel */
+  .showreel-theater-card {
+    min-height: 280px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .showreel-play-btn-large {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .showreel-hud-bar {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  /* Portfolio Grid */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+  }
+
+  /* Process Steps */
+  .process-timeline::before {
+    left: 1.75rem;
+  }
+
+  .process-step-item {
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+  }
+
+  .step-badge {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
+  }
+
+  .step-content-card {
+    padding: 1.5rem;
+  }
+
+  .step-title-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  /* Form Row */
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   SMALL MOBILE (max-width: 480px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .hero-headline {
+    font-size: 2.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.4rem;
+    font-size: 0.875rem;
+  }
+
+  .modal-content-window {
+    padding: 0;
+  }
+
+  .case-study-hero,
+  .case-study-grid {
+    padding: 1.5rem;
+  }
+}

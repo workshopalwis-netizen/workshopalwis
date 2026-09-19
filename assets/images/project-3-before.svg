@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <!-- Desaturated, milky flat LOG film look -->
+  <rect width="1280" height="720" fill="#33383f"/>
+
+  <path d="M 450 450 L 520 400 L 680 380 L 840 395 L 980 430 L 1020 450 Z" fill="#4b5563"/>
+  <circle cx="750" cy="420" r="100" fill="rgba(255,255,255,0.08)"/>
+
+  <text x="80" y="580" font-family="'Archivo Black', sans-serif" font-weight="700" font-size="44" fill="#9ca3af">RAW FLAT LOG FOOTAGE</text>
+  <text x="80" y="620" font-family="'Archivo Black', sans-serif" font-size="16" fill="#6b7280">PRE-LUT • LOW CONTRAST S-LOG3 SENSOR FEED</text>
+</svg>
