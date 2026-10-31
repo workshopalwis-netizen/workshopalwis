@@ -25,10 +25,11 @@
 
     // If user provided an actual YouTube/Vimeo/direct video URL, embed it
     if (showreelData.videoUrl && showreelData.videoUrl.trim() !== '') {
+      const sep = showreelData.videoUrl.includes('?') ? '&' : '?';
       videoFrame.innerHTML = `
-        <iframe src="${showreelData.videoUrl}?autoplay=1&rel=0" 
+        <iframe src="${showreelData.videoUrl}${sep}autoplay=1&title=0&byline=0&portrait=0" 
                 title="${showreelData.title}" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allow="autoplay; fullscreen; picture-in-picture" 
                 allowfullscreen></iframe>
       `;
     } else {

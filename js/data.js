@@ -1,13 +1,13 @@
 /**
  * DHANANJAYA PORTFOLIO DATA CONFIGURATION
  * 
- * You can easily customize or update your projects, videos, services,
- * and contact links directly in this file without editing the HTML structure.
+ * Centralized data configuration with real Vimeo project videos,
+ * thumbnails, services, and verified contact links.
  */
 
 const PORTFOLIO_DATA = {
   profile: {
-    name: "Dhananjaya",
+    name: "Dhananjaya Alwis",
     email: "workshopalwis@gmail.com",
     whatsApp: [
       { number: "+960 972 5219", link: "https://wa.me/9609725219", region: "Maldives" },
@@ -28,13 +28,14 @@ const PORTFOLIO_DATA = {
       heading: "MY WORK SPEAKS VISUALLY.",
       title: "MOTION DESIGN & VIDEO EDITING SHOWREEL",
       description: "A collection of my work across motion graphics, video editing, 3D animation, visual effects and creative content.",
-      duration: "01:48",
-      resolution: "4K UHD • 60 FPS",
-      // Replace with your actual showreel video URL or YouTube / Vimeo embed URL when ready
-      videoUrl: "", // e.g. "https://www.youtube.com/embed/YOUR_VIDEO_ID" or direct MP4
-      fallbackCover: "assets/images/showreel-cover.svg"
+      duration: "01:44",
+      resolution: "4K UHD • 60 FPS • VIMEO MASTER",
+      videoUrl: "https://player.vimeo.com/video/1218626039?h=aeeeb59037",
+      vimeoPageUrl: "https://vimeo.com/1218626039",
+      fallbackCover: "assets/images/thumb-introduction-video.png"
     },
     about: {
+      avatar: "assets/images/dhananjaya-avatar.jpg",
       bio: [
         "I'm a creative video editor and motion graphics designer passionate about turning ideas into engaging visual experiences.",
         "My work combines video editing, motion graphics, 3D animation, visual effects and creative storytelling.",
@@ -68,7 +69,6 @@ const PORTFOLIO_DATA = {
     achievements: {
       heading: "RESULTS THAT SPEAK",
       quote: "100% organic success proves the ability to hold viewer attention and provide genuine value.",
-      // Clearly marked placeholders for Dhananjaya's verified achievements
       verifiedBadges: [
         { label: "Retention Focused", detail: "Engineered for high watch-time & viewer hook rate" },
         { label: "Original Visual Systems", detail: "Zero generic cookie-cutter templates" },
@@ -138,29 +138,152 @@ const PORTFOLIO_DATA = {
 
   projects: [
     {
-      id: "hyperion-motion",
-      title: "HYPERION // KINETIC BRAND FILM",
+      id: "vaunt-fashion-commercial",
+      title: "VAUNT // FASHION BRAND COMMERCIAL",
+      category: "ADVERTISING",
+      categoryKey: "advertising",
+      shortDescription: "A creative commercial promo showcasing VAUNT through modern urban visuals, engaging editing, and cinematic presentation.",
+      tools: ["DaVinci Resolve", "Adobe Premiere Pro", "Adobe After Effects"],
+      featured: true,
+      thumbnail: "assets/images/thumb-vaunt-brand.png",
+      aspectRatio: "16:9",
+      year: "2026",
+      videoEmbedUrl: "https://player.vimeo.com/video/1241448949?h=e09618c623",
+      vimeoUrl: "https://vimeo.com/1241448949",
+      duration: "00:23",
+      caseStudy: {
+        client: "VAUNT — Fashion & Lifestyle Brand",
+        role: "Lead Video Editor & Motion Graphics Designer",
+        objective: "Develop a high-impact commercial promo for VAUNT, elevating the brand's apparel line with modern rhythm, slick pattern interrupts, and cinematic pacing.",
+        creativeApproach: "Cut to a rhythmic audio pulse, accentuating clothing silhouettes, fabric textures, and urban aesthetics with subtle motion graphics and clean typography overlays.",
+        process: "1. Brand vision & apparel line storyboard definition.\n2. Music beat mapping & fast-tempo cut assembly.\n3. Motion graphics title cards & transition design.\n4. DaVinci Resolve color grading for rich, editorial contrast.",
+        tools: ["DaVinci Resolve", "Adobe Premiere Pro", "Adobe After Effects"],
+        finalResult: "A high-conversion commercial video asset ready for cross-platform advertising and brand launch campaigns.",
+        beforeAfter: {
+          labelBefore: "RAW FOOTAGE TIMELINE",
+          labelAfter: "FINAL GRADED COMMERCIAL FRAME",
+          imageBefore: "assets/images/project-7-before.svg",
+          imageAfter: "assets/images/thumb-vaunt-brand.png"
+        }
+      }
+    },
+    {
+      id: "agency-introduction-showcase",
+      title: "AGENCY INTRODUCTION // CREATIVE SHOWCASE",
+      category: "VIDEO EDITING",
+      categoryKey: "video-editing",
+      shortDescription: "Cinematic agency introduction highlighting how powerful design, editing, and motion graphics drive business retention.",
+      tools: ["DaVinci Resolve Studio", "Adobe After Effects", "Fairlight Audio"],
+      featured: true,
+      thumbnail: "assets/images/thumb-introduction-video.png",
+      aspectRatio: "16:9",
+      year: "2026",
+      videoEmbedUrl: "https://player.vimeo.com/video/1218626039?h=aeeeb59037",
+      vimeoUrl: "https://vimeo.com/1218626039",
+      duration: "01:44",
+      caseStudy: {
+        client: "Creative Agency / Digital Studio",
+        role: "Creative Video Editor & Motion Graphics Specialist",
+        objective: "Address the noise and low attention spans in modern digital media, positioning creative motion design and video editing as the primary lever for audience engagement.",
+        creativeApproach: "Constructed an immersive narrative structure with voiceover synchronization, dynamic visual metaphors, and deliberate pacing shifts that sustain viewer intrigue.",
+        process: "1. Script adaptation and voiceover pacing roadmap.\n2. Motion graphic title animations and infographic visual systems.\n3. Cinema sound design layering with 20+ Foley and whoosh elements.\n4. Studio color calibration and broadcast loudness compliance.",
+        tools: ["DaVinci Resolve Studio", "Adobe After Effects", "Fairlight Audio"],
+        finalResult: "A flagship agency manifesto video delivering deep credibility and emotional connection.",
+        beforeAfter: {
+          labelBefore: "SCRIPT & TIMELINE ROUGH CUT",
+          labelAfter: "COMPLETED NARRATIVE MASTER",
+          imageBefore: "assets/images/project-3-before.svg",
+          imageAfter: "assets/images/thumb-introduction-video.png"
+        }
+      }
+    },
+    {
+      id: "animated-motion-graphic-project",
+      title: "ANIMATED MOTION GRAPHIC // BRAND PROJECT",
       category: "MOTION GRAPHICS",
       categoryKey: "motion-graphics",
-      shortDescription: "High-octane geometric brand identity film with reactive particle systems and custom kinetic typography.",
-      tools: ["After Effects", "Illustrator", "DaVinci Resolve"],
+      shortDescription: "Dynamic vector animation and kinetic motion graphics designed to turn ideas into memorable visual experiences.",
+      tools: ["Adobe After Effects", "Adobe Illustrator"],
       featured: true,
-      thumbnail: "assets/images/project-1.svg",
+      thumbnail: "assets/images/thumb-animated-motion-graphic.png",
       aspectRatio: "16:9",
-      year: "2025",
+      year: "2026",
+      videoEmbedUrl: "https://player.vimeo.com/video/1224112459?h=24d188cf5b",
+      vimeoUrl: "https://vimeo.com/1224112459",
+      duration: "00:14",
       caseStudy: {
-        client: "[Confidential Creative Brand — Editable Placeholder]",
-        role: "Motion Design Director, Animator & Sound Designer",
-        objective: "Create a 60-second high-energy visual manifesto introducing a next-generation tech ecosystem that commands instant viewer retention in the first 3 seconds.",
-        creativeApproach: "Leveraged an aggressive dark-mode aesthetic with luminescent neon violet and cyan accents. Deconstructed typographic glyphs into spatial 3D planes that reassemble on downbeats.",
-        process: "1. Moodboard & styleframes definition.\n2. Kinetic rhythm sync with customized 140 BPM audio bed.\n3. Procedural shape layer rigging in After Effects.\n4. Final DaVinci Resolve Fusion color pass with custom glow and chromatic aberration.",
-        tools: ["Adobe After Effects", "Adobe Illustrator", "DaVinci Resolve"],
-        finalResult: "Delivered a striking, cohesive visual campaign that stood out across social feeds and stage presentations.",
+        client: "Creative Motion Graphics Project",
+        role: "Motion Graphics Designer & Animator",
+        objective: "Demonstrate technical motion design mastery: transform abstract branding elements into fluid, eye-catching visual communication.",
+        creativeApproach: "Engineered expressive spatial easing, vector shape morphing, chromatic glows, and rhythm-locked typography.",
+        process: "1. Vector layout and asset preparation in Adobe Illustrator.\n2. Keyframing procedural bezier speed graphs in After Effects.\n3. Glow pass and kinetic transition staging.\n4. Sound effect synchronization for tactile impact.",
+        tools: ["Adobe After Effects", "Adobe Illustrator"],
+        finalResult: "A dynamic motion design showcase proving the ability to seize viewer attention instantly.",
         beforeAfter: {
-          labelBefore: "RAW FLAT VECTOR CHOP",
-          labelAfter: "FINAL GRADED & COMPOSITED FRAME",
+          labelBefore: "STATIC VECTOR ASSETS",
+          labelAfter: "ANIMATED KINETIC GRAPHIC",
           imageBefore: "assets/images/project-1-before.svg",
-          imageAfter: "assets/images/project-1.svg"
+          imageAfter: "assets/images/thumb-animated-motion-graphic.png"
+        }
+      }
+    },
+    {
+      id: "dhananjaya-portfolio-video",
+      title: "DHANANJAYA ALWIS // PORTFOLIO SHOWCASE",
+      category: "CREATIVE CONTENT",
+      categoryKey: "creative-content",
+      shortDescription: "Personal portfolio video voice-over showcasing video editing, motion graphics capabilities, and visual storytelling.",
+      tools: ["DaVinci Resolve", "Adobe After Effects", "Premiere Pro"],
+      featured: true,
+      thumbnail: "assets/images/thumb-dhananjaya-alwis.png",
+      aspectRatio: "16:9",
+      year: "2026",
+      videoEmbedUrl: "https://player.vimeo.com/video/1241447420?h=cbba83fd29",
+      vimeoUrl: "https://vimeo.com/1241447420",
+      duration: "00:21",
+      caseStudy: {
+        client: "Personal Brand Portfolio",
+        role: "Motion Graphics Designer & Video Editor",
+        objective: "Communicate personal creative philosophy, video editing standards, and technical versatility directly to clients and creative teams.",
+        creativeApproach: "High-contrast dark-mode presentation with bold typography badges, clean voiceover audio mastering, and rapid visual proof.",
+        process: "1. Core manifesto scripting.\n2. Visual asset selection showcasing diverse disciplines.\n3. Timeline synchronization with custom audio leveling.\n4. Master 4K encoding for Vimeo.",
+        tools: ["DaVinci Resolve", "Adobe After Effects", "Adobe Premiere Pro"],
+        finalResult: "A compelling personal showcase introducing Dhananjaya Alwis as a premier creative professional.",
+        beforeAfter: {
+          labelBefore: "RAW VOICE TRACK",
+          labelAfter: "POLISHED PORTFOLIO PIECE",
+          imageBefore: "assets/images/project-4-before.svg",
+          imageAfter: "assets/images/thumb-dhananjaya-alwis.png"
+        }
+      }
+    },
+    {
+      id: "maldives-travel-cinematic",
+      title: "MALDIVES // CINEMATIC TRAVEL STORYTELLING",
+      category: "VIDEO EDITING",
+      categoryKey: "video-editing",
+      shortDescription: "Experience the beauty of the Maldives through cinematic aerial drone footage, color grading, and engaging storytelling.",
+      tools: ["DaVinci Resolve Studio", "Adobe Premiere Pro", "Color Grading"],
+      featured: true,
+      thumbnail: "assets/images/thumb-maldives-travel.jpg",
+      aspectRatio: "16:9",
+      year: "2026",
+      videoEmbedUrl: "https://player.vimeo.com/video/1241718819?h=109bd5cd7b",
+      vimeoUrl: "https://vimeo.com/1241718819",
+      duration: "00:36",
+      caseStudy: {
+        client: "Travel & Hospitality / Maldives",
+        role: "Cinematic Video Editor & Colorist",
+        objective: "Showcase the tropical paradise of the Maldives: turquoise lagoons, vibrant coral reefs, and luxury overwater villas with breathtaking visual fidelity.",
+        creativeApproach: "Deliberate cinematic pacing combining wide drone vistas with macro shoreline waves, graded with rich tropical color science in DaVinci Resolve.",
+        process: "1. 4K D-Log drone footage normalization.\n2. Speed ramping and rhythmic ocean transition matching.\n3. Custom color grade balancing cyan water against warm white sand.\n4. Spatial audio mixing featuring natural sea textures.",
+        tools: ["DaVinci Resolve Studio", "Adobe Premiere Pro", "Film Print Emulation"],
+        finalResult: "A visually stunning travel narrative that transports viewers into the serene beauty of the Maldives.",
+        beforeAfter: {
+          labelBefore: "FLAT D-LOG DRONE FOOTAGE",
+          labelAfter: "CINEMATIC TROPICAL COLOR GRADE",
+          imageBefore: "assets/images/project-3-before.svg",
+          imageAfter: "assets/images/thumb-maldives-travel.jpg"
         }
       }
     },
@@ -171,12 +294,12 @@ const PORTFOLIO_DATA = {
       categoryKey: "3d",
       shortDescription: "Photorealistic 3D product visualization featuring cinematic lighting, mechanical deconstructions, and fluid macro camera sweeps.",
       tools: ["Blender", "After Effects", "DaVinci Resolve"],
-      featured: true,
+      featured: false,
       thumbnail: "assets/images/project-2.svg",
       aspectRatio: "16:9",
       year: "2025",
       caseStudy: {
-        client: "[Luxury Timepiece / Tech Concept — Editable Placeholder]",
+        client: "Luxury Tech Concept",
         role: "3D Artist, Lighting, Compositing & Video Editor",
         objective: "Demonstrate precision engineering, titanium chassis textures, and water resistance through immersive close-up macro shots.",
         creativeApproach: "Built an atmospheric dark studio lighting setup with sharp rim lights and anamorphic lens flares to accentuate the metallic bevels.",
@@ -192,87 +315,6 @@ const PORTFOLIO_DATA = {
       }
     },
     {
-      id: "the-drift-documentary",
-      title: "THE DRIFT // CINEMATIC PROMOTIONAL EDIT",
-      category: "VIDEO EDITING",
-      categoryKey: "video-editing",
-      shortDescription: "Rhythmic documentary-style promotional video combining rapid J-cuts, sound design swells, and moody film emulation.",
-      tools: ["DaVinci Resolve", "Premiere Pro", "Photoshop"],
-      featured: true,
-      thumbnail: "assets/images/project-3.svg",
-      aspectRatio: "16:9",
-      year: "2024",
-      caseStudy: {
-        client: "[Automotive / Lifestyle Brand — Editable Placeholder]",
-        role: "Lead Editor, Sound Designer & Colorist",
-        objective: "Transform hours of raw handheld cinema camera footage into a gripping 90-second adrenaline-fueled promotional narrative.",
-        creativeApproach: "Structured around micro-crescendos: contrasting tranquil mechanical Foley with explosive engine growls and rhythmic speed ramping.",
-        process: "1. Stringout and narrative beat mapping.\n2. Precise L-cut and J-cut audio-visual synchronization.\n3. Custom film grain overlay, halation, and contrast curve grading in DaVinci Resolve.\n4. Audio mastering with 32 distinct Foley layers.",
-        tools: ["DaVinci Resolve Studio", "Adobe Premiere Pro", "Fairlight Audio"],
-        finalResult: "A gripping piece that holds viewer attention from the opening frame to the final brand lockup.",
-        beforeAfter: {
-          labelBefore: "RAW REC.709 LOG FOOTAGE",
-          labelAfter: "FILM PRINT EMULATION & COLOR GRADE",
-          imageBefore: "assets/images/project-3-before.svg",
-          imageAfter: "assets/images/project-3.svg"
-        }
-      }
-    },
-    {
-      id: "syntax-kinetic-type",
-      title: "SYNTAX // KINETIC TYPOGRAPHY PIECE",
-      category: "CREATIVE CONTENT",
-      categoryKey: "creative-content",
-      shortDescription: "Expressive typographic motion piece translating rapid spoken word philosophy into synchronized visual architecture.",
-      tools: ["After Effects", "Photoshop", "Illustrator"],
-      featured: true,
-      thumbnail: "assets/images/project-4.svg",
-      aspectRatio: "16:9",
-      year: "2025",
-      caseStudy: {
-        client: "[Digital Creator / Podcast Identity — Editable Placeholder]",
-        role: "Kinetic Typographer & Motion Designer",
-        objective: "Create a viral visual quote reel with 100% viewer retention rate and instant readability on mobile feeds.",
-        creativeApproach: "Used variable font weights, scale oscillation, kinetic tracking, and dimensional spatial transitions matched to phonetics.",
-        process: "1. Syllable-by-syllable audio transcription & timing markers.\n2. Custom typeface manipulation with expressive kerning shifts.\n3. 3D camera sweeps through word clusters.\n4. Analog CRT monitor distortion pass.",
-        tools: ["Adobe After Effects", "Adobe Illustrator"],
-        finalResult: "An ultra-engaging typography reel that maximized watch time and replay loops.",
-        beforeAfter: {
-          labelBefore: "STATIC TEXT LAYOUT",
-          labelAfter: "ANIMATED KINETIC COMPOSITION",
-          imageBefore: "assets/images/project-4-before.svg",
-          imageAfter: "assets/images/project-4.svg"
-        }
-      }
-    },
-    {
-      id: "apex-social-reels",
-      title: "APEX // HIGH-RETENTION SOCIAL CAMPAIGN",
-      category: "SOCIAL MEDIA",
-      categoryKey: "social-media",
-      shortDescription: "Fast-paced vertical short-form campaign engineered with aggressive pattern interrupts and dynamic visual assets.",
-      tools: ["Premiere Pro", "After Effects", "Photoshop"],
-      featured: false,
-      thumbnail: "assets/images/project-5.svg",
-      aspectRatio: "9:16",
-      year: "2025",
-      caseStudy: {
-        client: "[Social Brand / E-commerce Creator — Editable Placeholder]",
-        role: "Short-Form Video Specialist & Motion Editor",
-        objective: "Combat feed fatigue with high-velocity 9:16 vertical edits that seize viewer attention within the first 1.5 seconds.",
-        creativeApproach: "Integrated sound effects on every visual change, punch-ins, custom animated stickers, and seamless loop design.",
-        process: "1. Hook analysis and script trimming.\n2. Micro-motion overlays and graphic callouts.\n3. Subtitle styling with high-contrast accent highlights.\n4. Platform optimization for TikTok, Instagram Reels, and YouTube Shorts.",
-        tools: ["Adobe Premiere Pro", "Adobe After Effects", "Adobe Photoshop"],
-        finalResult: "Consistently sustained above 85% average percentage viewed with organic audience sharing.",
-        beforeAfter: {
-          labelBefore: "RAW VERTICAL TALKING HEAD",
-          labelAfter: "DYNAMIC EDITED REEL WITH MOTION HOOKS",
-          imageBefore: "assets/images/project-5-before.svg",
-          imageAfter: "assets/images/project-5.svg"
-        }
-      }
-    },
-    {
       id: "anomaly-vfx-world",
       title: "ANOMALY // VFX ENVIRONMENT & COMPOSITING",
       category: "VFX",
@@ -282,9 +324,9 @@ const PORTFOLIO_DATA = {
       featured: false,
       thumbnail: "assets/images/project-6.svg",
       aspectRatio: "16:9",
-      year: "2024",
+      year: "2025",
       caseStudy: {
-        client: "[Sci-Fi Short Film / Concept Project — Editable Placeholder]",
+        client: "Sci-Fi Concept Project",
         role: "VFX Compositor & 3D Artist",
         objective: "Integrate futuristic sci-fi architecture and glowing energy monoliths into practical drone landscape footage seamlessly.",
         creativeApproach: "Matched camera focal lengths, atmospheric perspective density, and realistic sun shadow vectors to ensure complete suspension of disbelief.",
@@ -296,33 +338,6 @@ const PORTFOLIO_DATA = {
           labelAfter: "COMPLETED COMPOSITE WITH 3D EXTENSION",
           imageBefore: "assets/images/project-6-before.svg",
           imageAfter: "assets/images/project-6.svg"
-        }
-      }
-    },
-    {
-      id: "velocity-commercial-spot",
-      title: "VELOCITY // COMMERCIAL BRAND CAMPAIGN",
-      category: "ADVERTISING",
-      categoryKey: "advertising",
-      shortDescription: "High-impact promotional campaign video combining product typography, dynamic macro speed-ramping, and brand anthems.",
-      tools: ["DaVinci Resolve", "After Effects", "Premiere Pro"],
-      featured: false,
-      thumbnail: "assets/images/project-7.svg",
-      aspectRatio: "16:9",
-      year: "2025",
-      caseStudy: {
-        client: "[Sportswear / Tech Hardware Brand — Editable Placeholder]",
-        role: "Creative Editor & Motion Graphics Lead",
-        objective: "Deliver a compelling commercial launch spot designed for paid social acquisition and web hero placement.",
-        creativeApproach: "High-contrast rhythm with deliberate pauses before explosive visual payoffs, synchronized to a modular orchestral-trap score.",
-        process: "1. Storyboarding visual hooks around key selling propositions.\n2. Visual FX transitions bridging product features seamlessly.\n3. Multi-aspect ratio deliverables (16:9, 1:1, 9:16).\n4. Broadcast loudness compliance and color calibration.",
-        tools: ["DaVinci Resolve", "Adobe After Effects", "Adobe Premiere Pro"],
-        finalResult: "Delivered a high-conversion commercial asset ready for cross-platform distribution.",
-        beforeAfter: {
-          labelBefore: "ASSEMBLY CUT",
-          labelAfter: "POLISHED AD CAMPAIGN WITH BRAND GRAPHICS",
-          imageBefore: "assets/images/project-7-before.svg",
-          imageAfter: "assets/images/project-7.svg"
         }
       }
     }
@@ -347,7 +362,7 @@ const PORTFOLIO_DATA = {
       step: "03",
       title: "CREATE",
       subtitle: "Build the edit, motion graphics, animation, 3D and visual effects.",
-      description: "Where vision becomes tangible reality. I sculpt the primary cut, animate custom 2D/3D assets, rig typography, build custom transitions, and compositing visual elements frame by frame.",
+      description: "Where vision becomes tangible reality. I sculpt the primary cut, animate custom 2D/3D assets, rig typography, build custom transitions, and composite visual elements frame by frame.",
       deliverables: ["Assembly edit", "3D simulations & renders", "Motion graphics passes"]
     },
     {
@@ -511,13 +526,8 @@ const PORTFOLIO_DATA = {
     { label: "PREMIUM", desc: "Luxury studio finish, immaculate color science, uncompromising polish" }
   ],
 
-  /**
-   * SOCIAL PROFILES
-   * Note: As per instruction, only platforms with real URLs are shown.
-   * If you have active links for these platforms, paste them below.
-   * Empty string "" platforms will automatically remain hidden from the UI.
-   */
   socialLinks: [
+    { name: "Vimeo Portfolio", url: "https://vimeo.com/user200338888?fl=pp&fe=sh", active: true, icon: "vimeo" },
     { name: "Upwork Profile", url: "https://www.upwork.com/freelancers/~01639ba9bb14ce45a8?mp_source=share", active: true, icon: "briefcase" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/dananjaya-alwis-765848185/?skipRedirect=true", active: true, icon: "linkedin" },
     { name: "YouTube (@SuccessDrive)", url: "https://www.youtube.com/@SuccessDrive-t5t", active: true, icon: "youtube" },
@@ -531,7 +541,6 @@ const PORTFOLIO_DATA = {
   ]
 };
 
-// Export for ES modules and standard browser script window object
 if (typeof module !== "undefined" && module.exports) {
   module.exports = PORTFOLIO_DATA;
 }

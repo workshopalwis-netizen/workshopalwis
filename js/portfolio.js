@@ -123,6 +123,16 @@
 
       <div class="case-study-grid">
         <div class="case-study-main">
+          <!-- Real Vimeo Video Player -->
+          ${proj.videoEmbedUrl ? `
+            <div style="position:relative; width:100%; aspect-ratio:16/9; margin-bottom: 2rem; border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--border-accent); box-shadow: var(--shadow-card), 0 0 30px rgba(139,92,246,0.35); background:#000;">
+              <iframe src="${proj.videoEmbedUrl}&autoplay=1&title=0&byline=0&portrait=0" 
+                      style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                      allow="autoplay; fullscreen; picture-in-picture" 
+                      allowfullscreen></iframe>
+            </div>
+          ` : ''}
+
           <!-- Interactive Before / After VFX Slider -->
           ${cs.beforeAfter ? `
             <div style="margin-bottom: 2rem;">
@@ -143,11 +153,11 @@
                 <span class="comparison-label label-after">${cs.beforeAfter.labelAfter}</span>
               </div>
             </div>
-          ` : `
+          ` : (!proj.videoEmbedUrl ? `
             <div style="margin-bottom: 2rem;">
               <img src="${proj.thumbnail}" alt="${proj.title}" style="border-radius: var(--radius-md); width:100%; border:1px solid var(--border-subtle);"/>
             </div>
-          `}
+          ` : '')}
 
           <h3>Objective</h3>
           <p>${cs.objective}</p>
@@ -181,6 +191,16 @@
               ${cs.tools.map((t) => `<span class="tool-tag" style="background: rgba(139, 92, 246, 0.15); color: #fff;">${t}</span>`).join('')}
             </div>
           </div>
+          ${proj.vimeoUrl ? `
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <a href="${proj.vimeoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%; padding:0.65rem 1rem; font-size:0.75rem; gap:0.5rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.84 6.7c-.12 2.65-1.95 6.27-5.5 10.87-3.66 4.77-6.75 7.15-9.28 7.15-1.57 0-2.89-1.45-3.97-4.35-.72-2.65-1.45-5.3-2.17-7.95C1.19 9.87.5 8.59.1 8.59c-.25 0-1.12.52-2.6 1.57L-3.5 8.9C-1.8 7.4 0 5.8 1.88 4.12 3.86 2.37 5.23 1.45 6 1.35c1.93-.2 3.12 1.05 3.58 3.75.52 3.08.88 5.01 1.08 5.78.62 3.2 1.3 4.8 2.05 4.8.58 0 1.46-.94 2.64-2.82 1.18-1.88 1.8-3.3 1.86-4.26.1-.96-.28-1.44-1.14-1.44-.6 0-1.25.13-1.95.4 1.25-4.1 3.63-6.07 7.14-5.9 2.6.12 3.85 1.77 3.75 4.94z"/>
+                </svg>
+                Watch on Vimeo
+              </a>
+            </div>
+          ` : ''}
         </aside>
       </div>
 
@@ -267,6 +287,7 @@
     if (!modal) return;
     modal.classList.remove('is-open');
     document.body.style.overflow = '';
+    if (modalBody) modalBody.innerHTML = '';
   }
 
   if (modalClose) modalClose.addEventListener('click', closeModal);
